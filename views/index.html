@@ -293,17 +293,17 @@
               ];
               let txt = "";
               txt +=
-                "<p><b>Browser CodeName</b>: " +
+                "<p><b>Tên mã trình duyệt</b>: " +
                 navigator.appCodeName +
                 "</p>";
-              txt += "<p><b>Browser Name</b>: " + navigator.appName + "</p>";
+              txt += "<p><b>Tên trình duyệt</b>: " + navigator.appName + "</p>";
               txt +=
-                "<p><b>Cookies Enabled</b>: " +
+                "<p><b>Trạng thái Cookie</b>: " +
                 navigator.cookieEnabled +
                 "</p>";
-              txt += "<p><b>Browser Online</b>: " + navigator.onLine + "</p>";
-              txt += "<p><b>Platform</b>: " + navigator.platform + "</p>";
-              txt += "<p><b>User-agent</b>: " + navigator.userAgent + "</p>";
+              txt += "<p><b>Trạng thái trình duyệt</b>: " + navigator.onLine + "</p>";
+              txt += "<p><b>Nền tảng</b>: " + navigator.platform + "</p>";
+              txt += "<p><b>User - Agent</b>: " + navigator.userAgent + "</p>";
               let text_el = document.querySelector("div#browser_info");
               setInterval(() => {
                 var d = new Date();
@@ -316,7 +316,7 @@
                 const bulan = arrBulan[bln];
                 text_el.innerHTML =
                   txt +
-                  "<b>Date</b>: " +
+                  "<b>Thời gian</b>: " +
                   jam +
                   ":" +
                   menit +
